@@ -1,0 +1,97 @@
+/** @define AppBase; use strict */
+
+.AppBase {
+  width: 100%;
+  min-height: 100%;
+  background: #ddd;
+  margin-top: 30%;
+}
+
+.AppBase-info {
+  font-family: 'PT Sans Narrow', sans-serif;
+  margin: 110px 10% 10%;
+  background: whitesmoke;
+  border-radius: 2px;
+  padding: 1em
+}
+
+.AppBase-info.is-loading {
+  background: transparent;
+  max-width: 200px;
+  font-size: 80px;
+  margin: 250px auto;
+}
+
+.AppBase-info-plane {
+  float: left;
+  color: #802815;
+}
+
+.AppBase-header.is-full-screen .AppBase-info {
+  opacity: .8;
+}
+
+.AppBase-header {
+  position: fixed;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  border-bottom: 2px solid #022735;
+  text-align: center;
+  background: #6D92A0 url("https://c2.staticflickr.com/8/7428/12317154475_79cebc6311_b.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+
+.AppBase-header h1 {
+  font-family: 'Lobster', cursive;
+  color: #022735;
+  font-size: 80px;
+  display: inline-block;
+  padding-top: 35px;
+  transform: rotate(-10deg);
+  text-shadow: 0px 0px 19px #D4B66A;
+}
+
+.AppBase-header-rate {
+  position: relative;
+  bottom: -30px;
+  transition: margin-top .5s;
+}
+
+.AppBase-header.is-full-screen .AppBase-header-rate {
+  margin-top: 16vh;
+  transition-delay: 1s;
+}
+
+.AppBase-header-rate h5 {
+  color: #103E50;
+  font-size: 33px;
+  font-family: "Lobster", cursive;
+  margin-top: -90px;
+  transition: margin-top 1s;
+}
+
+.AppBase-header-rate input {
+  padding: 20px;
+  font-size: 26px;
+  text-align: center;
+  border: medium none;
+  width: 60%;
+  border-radius: 2;
+  background: #fff;
+  transition: background 1s;
+  outline: none;
+}
+
+.AppBase-header.is-full-screen .AppBase-header-rate input  {
+  background: #6D92A0;
+  transition-delay: 1s;
+}
+
+.AppBase-header.is-full-screen .AppBase-header-rate h5 {
+  margin-top: -120px;
+  transition-delay: 1s;
+}

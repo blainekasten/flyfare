@@ -1,0 +1,42 @@
+.Flights {
+  position: fixed;
+  top: 30%;
+  left: 0px;
+  width: 100%;
+  animation: left-slide .5s;
+  overflow: auto;
+  transition: background .3s;
+}
+
+.Flights.is-populated {
+  background: #BADFED;
+  box-shadow: 0px 7px 10px 14px rgba(0, 0, 0, 0.4);
+  height: 70%; /* diff of top margin + footer */
+}
+
+.Flights-error {
+  background: #802815;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Flights-error h1 {
+  color: #457385;
+  font-family: 'Lobster', cursive;
+  font-size: 80px;
+  margin-top: -40px;
+}
+
+@-webkit-keyframes left-slide {
+  from { left: -100%; }
+  to { left: 0px; }
+}
+
+@keyframes left-slide {
+  from { left: -100%; }
+  to { left: 0px; }
+}
+

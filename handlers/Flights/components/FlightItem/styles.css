@@ -1,0 +1,66 @@
+/** @define FlightItem; use strict */
+
+.FlightItem {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  border-bottom: 1px solid whitesmoke;
+  background: #457385;
+  box-shadow: 1px 1px 7px #444; 
+}
+
+
+.FlightItem:nth-child(even) {
+  background: #6D92A0;
+}
+
+.FlightItem-airport {
+  width: 55%;
+  font-family: 'Lobster', cursive;
+  font-size: 28px;
+}
+
+.FlightItem-fee {
+  flex-grow: 1;
+  font-family: 'Lobster', cursive;
+  font-size: 28px;
+  width: 23%;
+}
+
+.FlightItem-fee:before {
+  content: '$'
+}
+
+.FlightItem-buy {
+  align-self: flex-end;
+  flex-grow: 2;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-font-smoothing: antialiased;
+  background-color: #D47C6A;
+  border-radius: 0px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Lobster', cursive;
+  font-size: 14px
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.75em 1em;
+  text-decoration: none;
+  text-align: center;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.FlightItem-buy:hover, .FlightItem-buy:focus {
+  background-color: #802815;
+}
+
+.FlightItem p {
+  color: #802815;
+  font-family: "Lobster",cursive;
+  margin: 10px auto;
+}

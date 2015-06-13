@@ -1,0 +1,30 @@
+/** @define NotFound; use strict */
+
+.NotFound {
+  text-align: center;
+}
+
+
+.NotFound-info {
+  padding: 4em 0px;
+}
+
+.NotFound-info span {
+  font-family: 'Lobster', cursive;
+  color: #888;
+  font-size: 60px;
+}
+
+.NotFound-imgmap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  max-height: 440px;
+  overflow: hidden;
+}
+
+.NotFound-imgmap img {
+  height: 200px;
+  margin: 10px;
+}
